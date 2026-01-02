@@ -65,8 +65,12 @@ input{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    padding: 20px 5%;
-    background:#b6996c;
+    padding: 80px 10%;
+    background:#b6996c 100%;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .about-img {
@@ -126,9 +130,12 @@ input{
     }
     .about {
         flex-direction: column;
-        padding: 20px 5%;
+        padding: 40px 20px;
         text-align: center;
         gap: 0;
+        margin-left: 0;
+        margin-right: 0;
+
     }
     .about-img, .about-text{
         flex: 1 1 100%;
