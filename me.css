@@ -1,0 +1,239 @@
+body{
+    margin: 0 100px;
+    background-color: wheat;
+}
+.search-box {
+    list-style: none;
+    display: flex;
+    margin-left: 60px;
+}
+
+.search-box input {
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box button {
+    padding: 5px 15px;
+    background-color: #ff9f1c; 
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #e68a00;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav .logo h1{
+    font-weight: 800;
+    font-family: sans-serif;
+    color: orange;
+    font-size: 40px;
+    text-shadow: 20px 15px 20px green;
+}
+.nav ul a:hover{
+    color: red;
+    font-size: 23px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin-right: 30px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+input{
+    cursor: pointer;
+    font-weight: 500;
+    padding: 8px 10px;
+    font-size: 15px;
+}
+.signin{
+    background: transparent;
+    border: none;
+}
+.signup{
+    background-color: orange;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.popular-menu {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #fdf5e6;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.menu-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+}
+
+.menu-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-top: -60px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.menu-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.ingredients {
+    list-style: none;
+    padding: 0;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff9f0d;
+    margin-bottom: 20px;
+}
+
+.order-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.85rem;
+}
+
+.qty-box input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.order-btn {
+    background-color: #ff9f0d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #e68a00;
+    box-shadow: 0 5px 15px rgba(255, 159, 13, 0.4);
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; top: 0; width: 100%; height: 100%; 
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 25px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.close { position: absolute; right: 15px; top: 10px; font-size: 28px; cursor: pointer; }
+
+.payment-methods button {
+  background: #fdf2e9;
+  border: 1px solid #e67e22;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.confirm-btn {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.payment-btn {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.payment-btn.active {
+    border-color: #ff9f0d;
+    background-color: #fff9f0;
+    color: #ff9f0d;
+    font-weight: bold;
+}

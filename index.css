@@ -1,0 +1,118 @@
+::after,::before{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 100px;
+    background-color: wheat;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav .logo h1{
+    font-weight: 800;
+    font-family: sans-serif;
+    color: orange;
+    font-size: 40px;
+    text-shadow: 20px 15px 20px green;
+}
+.nav .logo .lo{
+    font-family: sans-serif;
+    font-size: 40px;
+    text-shadow: 30px 25px 30px rgb(6, 17, 222);
+    color: red;
+}
+.nav ul a:hover{
+    color: red;
+    font-size: 23px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin-right: 30px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+.nav .signup{
+    background-color: rgb(247, 189, 82);
+    color: #ffffff;
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 5px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.content .content-left .info p{
+    line-height: 2pc;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+.content .content-right img{
+    width: 300px;
+    height: auto;
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate{
+    0%{
+           transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg) 
+    }
+}
+.content .content-left a{
+     background-color: orange;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
